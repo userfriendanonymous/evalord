@@ -26,6 +26,7 @@ import Css exposing (px)
 import Css exposing (fontWeight)
 import Css exposing (bold)
 import Css exposing (int)
+import Css exposing (vh)
 
 type Msg
     = Board View.Board.Msg
@@ -51,7 +52,7 @@ view model =
                 , justifyContent center
                 , alignItems center
                 , flexDirection column
-                , height (vw 100)
+                , height (vh 100)
                 , backgroundColor (hex "0d0c17")
                 , fontFamilies [ "Orbitron" ]
                 , color (hex "ffbb00")
